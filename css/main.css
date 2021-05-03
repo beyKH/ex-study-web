@@ -385,3 +385,44 @@ main{
   line-height: 27px;
 }
 
+
+/* footer */
+
+.footer{
+  background-color: #717CFF;
+  display: flex;
+  color: #fff;
+}
+.footer-right{
+  display: flex;
+}
+
+.footer ul{
+  list-style: none;
+
+
+}
+.footer ul a{
+  text-decoration: none;
+}
+.footer-social-networks{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.footer-social-networks a{
+  display: inline-block;
+}
+
+.footer-info{
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.footer-right a{
+  text-decoration: none;
+  color:#fff;
+  font-size: 14px;
+}
