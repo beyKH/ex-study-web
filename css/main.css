@@ -1,24 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul,ol{
+  padding: 0;
+}
+.container{
+  max-width: 1276px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 body{
   font-size: 16px;
   font-weight: 500;
-  line-height: 28px;
   font-family: 'Roboto', 'Arial', sans-serif;
-
+  margin: 0;
 }
 
 /* header section */
 
 .header-top{
   display: flex;
-  justify-content: space-between;
+  margin-top: 40px;
 }
-.header ul{
+header ul{
   display: flex;
   list-style: none;
   align-items: center;
 }
 
 /* navbar */
+.header-top nav{
+  margin-left: auto;
+
+
+}
+.header-top li{
+  margin-right:70px ;
+}
 .nav-item{
   text-decoration: none;
   color: #373737;
@@ -37,39 +65,79 @@ body{
   align-items: center;
   transition: all 0.3s ease;
   border-radius: 11px;
+
+}
+
+.nav-item-last{
+  margin-right: 0px;
 }
 .apply:hover{
   background-color: #717cff;
   color: #fff;
 }
+
+/* main */
+
+
+
 /* hero section */
+main {
+  background-color: #fff;
+}
+
+.hero-inner{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.hero ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
 .hero-left{
-  width: 632px;
+  width: 630px;
+
+
 }
 .hero-left h1{
   font-weight: 900;
   font-size: 56px;
   line-height: 65px;
-
+  margin-top: 140px;
 }
 .hero-left span{
   color:#717CFF;
+
 }
 
 .hero-left p{
   font-size: 22px;
   line-height: 38px;
   color: #7d7d7d;
+  margin-bottom: 40px;
+  margin-top: 15px;
 }
 
-.hero-left a{
-  text-decoration: none;
 
+
+.hero-right{
+  align-items: end;
+  margin-top: 115px;
 }
+
 
 .social-networks {
   display: flex;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: start;
+
+}
+
+.social-networks ul{
+  padding: 0;
 }
 .apply-now {
   border: 1px solid #717CFF;
@@ -82,42 +150,61 @@ body{
   border-radius: 11px;
   transition: all 0.3s ease;
   display: inline-block;
-}
+  margin-top: 40px;
 
+}
+.apply-now img{
+  margin-left: 35px;
+
+}
 .apply-now:hover{
   border: 1px solid #717CFF;
   background: #fff;
   color: #717cff;
 }
 
-/* main */
-main{
-  background-color: #fff;
+.icon-twitter {
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+
 .featured-universities{
   text-align: center;
   background-color: #FAFAFA;
+  padding: 55px 0;
 }
+
 .featured-universities h2{
-  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 94px;
+  line-height: 54px;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
 }
+
 .featured-universities-list ul{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
+  margin-bottom: 110px;
 }
-.featured-universities-list img{
+.featured-universities-list li:last-child{
+  margin-right: 0px;
+}
+.featured-universities-list li{
+  margin-right: 74px;
+}
 
-}
 .button-points{
   list-style: none;
   display: flex;
   justify-content: center;
 }
-
+.button-points li{
+  padding-right: 20px;
+}
 .button-points  li button {
   list-style: none;
   width: 10px;
@@ -137,6 +224,11 @@ main{
   background-color: #F2F2F2;
 
 }
+
+.our-services-inner{
+  margin: 125px 0 ;
+}
+
 .our-secrvices-desc{
   text-align: center;
   width: 949px;
@@ -144,6 +236,7 @@ main{
 }
 
 .our-secrvices-desc h2{
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 37px;
   line-height: 54px;
@@ -151,6 +244,7 @@ main{
   text-transform: capitalize;
 }
 .our-secrvices-desc p{
+  margin-bottom: 110px;
   font-size: 22px;
   font-weight: 500;
   line-height: 38px;
@@ -165,15 +259,17 @@ main{
   flex-wrap: wrap;
   width: 1126px;
   margin: auto;
-  justify-content: center;
+  justify-content:center;
 }
 
 .card-boxes{
-  box-sizing: border-box;
+  margin-right: 30px;
   width: 344px;
   height: 351px;
   box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
   padding: 20px 15px 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 
 }
 .card-boxes h3{
@@ -396,10 +492,15 @@ main{
 
 /* footer */
 
-.footer{
+footer{
   background-color: #717CFF;
-  display: flex;
-  color: #fff;
+
+}
+.footer{
+    display: flex;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 .footer-right{
   display: flex;
