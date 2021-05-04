@@ -682,7 +682,7 @@ footer{
 }
 .footer-social-networks{
   display: flex;
-  align-items:flex-end;
+  align-items:f;
   justify-content: center;
   margin-left: 150px;
 }
